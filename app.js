@@ -27,7 +27,7 @@ const verifyToken = require('./src/verifyToken');
 app.use('/user', userRouter);
 
 // Listening to the server
-app.listen(8000, function() {
+app.listen(process.env.PORT || 5555, function() {
     console.log('🚀 Server started on port 8000!');
 });
 
